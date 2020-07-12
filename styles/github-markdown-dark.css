@@ -60,6 +60,7 @@ body[class*="dark-ui"] .mde-preview img {
   background-color: transparent;
 }
 body[class*="dark-ui"] .mde-preview .highlight pre,
+body[class*="dark-ui"] .mde-preview p > code,
 body[class*="dark-ui"] .mde-preview pre {
   background-color: rgba(0, 0, 0, 0.1);
 }

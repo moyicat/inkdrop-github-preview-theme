@@ -1,8 +1,30 @@
-.serif {
-  font-family: "Source Serif Pro", "Source Han Sans", "Helvetica Neue", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Code Pro Italic'), local('SourceCodePro-It'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_QiYsKILxRpg3hIP6sJ7fM7PqlOOvT.ttf) format('truetype');
 }
-.sans {
-  font-family: "Source Sans Pro", "Source Han Sans", "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Source Code Pro Bold Italic'), local('SourceCodePro-BoldIt'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_ViYsKILxRpg3hIP6sJ7fM7PqlONNvsecv.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Code Pro Regular'), local('SourceCodePro-Regular'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_SiYsKILxRpg3hIP6sJ7fM7PqVOg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Source Code Pro Bold'), local('SourceCodePro-Bold'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_XiYsKILxRpg3hIP6sJ7fM7Pqths7ztA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Source Sans Pro';
@@ -31,6 +53,15 @@
   font-weight: 700;
   font-display: swap;
   src: local('Source Serif Pro Bold'), local('SourceSerifPro-Bold'), url(https://fonts.gstatic.com/s/sourceserifpro/v7/neIXzD-0qpwxpaWvjeD0X88SAOeasc8bhSs.ttf) format('truetype');
+}
+.serif {
+  font-family: "Source Serif Pro", "Source Han Sans", "Helvetica Neue", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.sans {
+  font-family: "Source Sans Pro", "Source Han Sans", "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+}
+.mono {
+  font-family: "Source Code Pro", "Source Han Mono", SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
 }
 @font-face {
   font-family: octicons-anchor;
@@ -76,8 +107,7 @@
 .mde-preview code,
 .mde-preview kbd,
 .mde-preview pre {
-  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
-  font-size: 1em;
+  font-family: "Source Code Pro", "Source Han Mono", SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
 }
 .mde-preview input {
   color: inherit;
@@ -159,9 +189,6 @@
 }
 .mde-preview dd {
   margin-left: 0;
-}
-.mde-preview code {
-  font-size: 12px;
 }
 .mde-preview pre {
   margin-top: 0;
@@ -407,14 +434,15 @@
 .mde-preview pre {
   padding-top: 0.8em;
   padding-bottom: 0.8em;
-  padding-left: 0.8em;
-  padding-right: 0.8em;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
   overflow: auto;
   word-wrap: normal;
   background-color: #f7f7f7;
   border-radius: 3px;
 }
 .mde-preview pre code {
+  font-family: "Source Code Pro", "Source Han Mono", SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
   display: inline;
   max-width: initial;
   padding: 0;
