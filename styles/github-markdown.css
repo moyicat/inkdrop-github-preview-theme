@@ -1,3 +1,37 @@
+.serif {
+  font-family: "Source Serif Pro", "Source Han Sans", "Helvetica Neue", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.sans {
+  font-family: "Source Sans Pro", "Source Han Sans", "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3aPw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vAkA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Serif Pro'), local('SourceSerifPro-Regular'), url(https://fonts.gstatic.com/s/sourceserifpro/v7/neIQzD-0qpwxpaWvjeD0X88SAOeaiXM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Source Serif Pro Bold'), local('SourceSerifPro-Bold'), url(https://fonts.gstatic.com/s/sourceserifpro/v7/neIXzD-0qpwxpaWvjeD0X88SAOeasc8bhSs.ttf) format('truetype');
+}
 @font-face {
   font-family: octicons-anchor;
   src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
@@ -6,7 +40,7 @@
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   color: #333;
-  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Source Serif Pro", "Source Han Sans", "Helvetica Neue", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.6;
   word-wrap: break-word;
 }
@@ -32,10 +66,6 @@
 }
 .mde-preview em {
   color: black;
-}
-.mde-preview h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
 }
 .mde-preview img {
   border: 0;
@@ -92,7 +122,6 @@
 }
 .mde-preview hr {
   height: 0;
-  margin: 15px 0;
   overflow: hidden;
   background: transparent;
   border: 0;
@@ -113,28 +142,7 @@
 .mde-preview h4,
 .mde-preview h5,
 .mde-preview h6 {
-  margin-top: 0;
-  padding-top: 15px;
-  margin-bottom: 15px;
-  line-height: 1.1;
-}
-.mde-preview h1 {
-  font-size: 30px;
-}
-.mde-preview h2 {
-  font-size: 21px;
-}
-.mde-preview h3 {
-  font-size: 16px;
-}
-.mde-preview h4 {
-  font-size: 14px;
-}
-.mde-preview h5 {
-  font-size: 12px;
-}
-.mde-preview h6 {
-  font-size: 11px;
+  font-family: "Source Sans Pro", "Source Han Sans", "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
 }
 .mde-preview blockquote {
   margin: 0;
@@ -229,48 +237,44 @@
   visibility: visible;
 }
 .mde-preview h1 {
-  padding-bottom: 0.3em;
-  font-size: 2.25em;
-  line-height: 1.2;
-  border-bottom: 1px solid #eee;
+  font-family: "Source Serif Pro", "Source Han Sans", "Helvetica Neue", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 2.1em;
+  line-height: 1.52380952;
+  margin: 0.76190476em 0 0;
+  font-weight: normal;
 }
-.mde-preview h1 .anchor {
-  line-height: 1;
+.mde-preview #alt-heading-one {
+  font-family: "Source Sans Pro", "Source Han Sans", "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
 }
 .mde-preview h2 {
-  padding-bottom: 0.3em;
-  font-size: 1.75em;
-  line-height: 1.225;
-  border-bottom: 1px solid #eee;
+  font-size: 1.6em;
+  line-height: 2;
+  margin: 1em 0 0;
 }
-.mde-preview h2 .anchor {
-  line-height: 1;
+.mde-preview #alt-heading-two {
+  font-family: "Source Serif Pro", "Source Han Sans", "Helvetica Neue", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 .mde-preview h3 {
-  font-size: 1.5em;
-  line-height: 1.43;
+  font-size: 1.2em;
+  line-height: 1.33333333;
+  margin: 1.33333333em 0 0;
 }
-.mde-preview h3 .anchor {
-  line-height: 1.2;
-}
-.mde-preview h4 {
-  font-size: 1.25em;
-}
-.mde-preview h4 .anchor {
-  line-height: 1.2;
-}
-.mde-preview h5 {
-  font-size: 1em;
-}
-.mde-preview h5 .anchor {
-  line-height: 1.1;
-}
+.mde-preview h4,
+.mde-preview h5,
 .mde-preview h6 {
   font-size: 1em;
-  color: #777;
+  line-height: 1.6;
+  margin: 1.6em 0 0;
 }
-.mde-preview h6 .anchor {
-  line-height: 1.1;
+.mde-preview h4 {
+  text-transform: uppercase;
+}
+.mde-preview h5,
+.mde-preview h6 {
+  opacity: 0.6;
+}
+.mde-preview h6 {
+  font-weight: normal;
 }
 .mde-preview p,
 .mde-preview blockquote,
@@ -278,14 +282,16 @@
 .mde-preview ol,
 .mde-preview dl,
 .mde-preview table,
-.mde-preview pre {
-  margin-top: 0;
-  margin-bottom: 16px;
+.mde-preview pre,
+.mde-preview hr,
+.mde-preview img:only-child {
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 1.6em 0 0;
 }
 .mde-preview hr {
   height: 4px;
   padding: 0;
-  margin: 16px 0;
   background-color: #e7e7e7;
   border: 0 none;
 }
@@ -321,6 +327,7 @@
   padding: 0 15px;
   color: #777;
   border-left: 4px solid #ddd;
+  font-style: italic;
 }
 .mde-preview blockquote > :first-child {
   margin-top: 0;
@@ -334,13 +341,16 @@
   overflow: auto;
   word-break: keep-all;
 }
-.mde-preview table th {
-  font-weight: bold;
-}
 .mde-preview table th,
 .mde-preview table td {
-  padding: 6px 13px;
+  font-size: 1em;
+  line-height: 1;
+  padding: 0.864em 0.8em 0.736em 0.8em;
   border: 1px solid #ddd;
+}
+.mde-preview table th {
+  font-weight: bold;
+  border-bottom-width: 4px;
 }
 .mde-preview table tr {
   background-color: #fff;
@@ -353,6 +363,9 @@
   max-width: 100%;
   box-sizing: content-box;
   background-color: #fff;
+}
+.mde-preview img:only-child {
+  display: block;
 }
 .mde-preview code {
   padding: 0;
@@ -516,8 +529,12 @@
   border-radius: 3px;
   box-shadow: inset 0 -1px 0 #bbb;
 }
-.mde-preview .task-list-item {
+.mde-preview li.task-list-item {
   list-style-type: none;
+}
+.mde-preview li.task-list-item > .ui.checkbox,
+.mde-preview li.task-list-item > p > .ui.checkbox {
+  margin-top: 0.4em;
 }
 .mde-preview .task-list-item + .task-list-item {
   margin-top: 0px;
