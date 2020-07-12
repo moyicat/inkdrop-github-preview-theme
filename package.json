@@ -1,7 +1,7 @@
 {
   "name": "source-baseline-preview",
   "description": "Inkdrop Markdown Editor Preview Theme with baseline alignment and source font",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "theme": "preview",
   "scripts": {
     "build": "lessc styles/less/github-markdown.less ./styles/github-markdown.css --js && lessc styles/less/github-markdown-dark.less ./styles/github-markdown-dark.css"
