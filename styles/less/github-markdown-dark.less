@@ -42,7 +42,7 @@ body[class*="dark-ui"] {
       border-bottom-color: rgba(255, 255, 255, 0.4);
     }
 
-    hr {
+    hr:after {
       background-color: rgba(255, 255, 255, 0.3);
     }
 
@@ -57,12 +57,18 @@ body[class*="dark-ui"] {
 
     table th,
     table td {
-      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    table th,
+    table tbody tr:last-child td {
+      &:after {
+        background-color: rgba(255, 255, 255, 0.25);
+      }
     }
 
     table tr {
       background-color: transparent;
-      border-top: 1px solid rgba(255, 255, 255, 0.25);
     }
 
     table tr:nth-child(2n) {

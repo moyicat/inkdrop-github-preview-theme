@@ -4,7 +4,7 @@
   "version": "1.5.0",
   "theme": "preview",
   "scripts": {
-    "build": "lessc styles/less/github-markdown.less ./styles/github-markdown.css && lessc styles/less/github-markdown-dark.less ./styles/github-markdown-dark.css"
+    "build": "lessc styles/less/github-markdown.less ./styles/github-markdown.css --js && lessc styles/less/github-markdown-dark.less ./styles/github-markdown-dark.css"
   },
   "repository": "https://github.com/moyicat/inkdrop-medium-alt-preview",
   "license": "MIT",

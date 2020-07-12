@@ -32,7 +32,7 @@ body[class*="dark-ui"] .mde-preview h1,
 body[class*="dark-ui"] .mde-preview h2 {
   border-bottom-color: rgba(255, 255, 255, 0.4);
 }
-body[class*="dark-ui"] .mde-preview hr {
+body[class*="dark-ui"] .mde-preview hr:after {
   background-color: rgba(255, 255, 255, 0.3);
 }
 body[class*="dark-ui"] .mde-preview blockquote {
@@ -44,11 +44,14 @@ body[class*="dark-ui"] .mde-preview table th {
 }
 body[class*="dark-ui"] .mde-preview table th,
 body[class*="dark-ui"] .mde-preview table td {
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+body[class*="dark-ui"] .mde-preview table th:after,
+body[class*="dark-ui"] .mde-preview table tbody tr:last-child td:after {
+  background-color: rgba(255, 255, 255, 0.25);
 }
 body[class*="dark-ui"] .mde-preview table tr {
   background-color: transparent;
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 body[class*="dark-ui"] .mde-preview table tr:nth-child(2n) {
   background-color: rgba(255, 255, 255, 0.05);

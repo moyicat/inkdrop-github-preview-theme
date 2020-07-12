@@ -70,10 +70,6 @@
 .mde-preview img {
   border: 0;
 }
-.mde-preview hr {
-  box-sizing: content-box;
-  height: 0;
-}
 .mde-preview pre {
   overflow: auto;
 }
@@ -121,11 +117,9 @@
   text-decoration: underline;
 }
 .mde-preview hr {
-  height: 0;
-  overflow: hidden;
   background: transparent;
+  height: 0;
   border: 0;
-  border-bottom: 1px solid #ddd;
 }
 .mde-preview hr:before {
   display: table;
@@ -271,7 +265,7 @@
 }
 .mde-preview h5,
 .mde-preview h6 {
-  opacity: 0.6;
+  color: #777;
 }
 .mde-preview h6 {
   font-weight: normal;
@@ -281,6 +275,7 @@
 .mde-preview ul,
 .mde-preview ol,
 .mde-preview dl,
+.mde-preview dl dt,
 .mde-preview table,
 .mde-preview pre,
 .mde-preview hr,
@@ -290,10 +285,15 @@
   margin: 1.6em 0 0;
 }
 .mde-preview hr {
-  height: 4px;
   padding: 0;
+  position: relative;
+}
+.mde-preview hr:after {
   background-color: #e7e7e7;
-  border: 0 none;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: -2px;
 }
 .mde-preview ul,
 .mde-preview ol {
@@ -314,8 +314,6 @@
 }
 .mde-preview dl dt {
   padding: 0;
-  margin-top: 16px;
-  font-size: 1em;
   font-style: italic;
   font-weight: bold;
 }
@@ -324,7 +322,7 @@
   margin-bottom: 16px;
 }
 .mde-preview blockquote {
-  padding: 0 15px;
+  padding: 0 0.8em;
   color: #777;
   border-left: 4px solid #ddd;
   font-style: italic;
@@ -341,23 +339,39 @@
   overflow: auto;
   word-break: keep-all;
 }
-.mde-preview table th,
-.mde-preview table td {
-  font-size: 1em;
-  line-height: 1;
-  padding: 0.864em 0.8em 0.736em 0.8em;
-  border: 1px solid #ddd;
-}
-.mde-preview table th {
-  font-weight: bold;
-  border-bottom-width: 4px;
-}
 .mde-preview table tr {
   background-color: #fff;
-  border-top: 1px solid #ccc;
 }
 .mde-preview table tr:nth-child(2n) {
   background-color: #f8f8f8;
+}
+.mde-preview table th,
+.mde-preview table td {
+  font-size: 1em;
+  line-height: 1.6;
+  padding: 0.464em 0.8em 0.336em 0.8em;
+  position: relative;
+  border-top: 1px #ccc solid;
+}
+.mde-preview table th,
+.mde-preview table tbody tr:last-child td {
+  position: relative;
+}
+.mde-preview table th:after,
+.mde-preview table tbody tr:last-child td:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #ccc;
+}
+.mde-preview table th {
+  font-weight: bold;
+}
+.mde-preview table th:after {
+  height: 3px;
 }
 .mde-preview img {
   max-width: 100%;
@@ -391,11 +405,12 @@
   border: 0;
 }
 .mde-preview pre {
-  padding: 16px;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
   overflow: auto;
   word-wrap: normal;
-  font-size: 85%;
-  line-height: 1.45;
   background-color: #f7f7f7;
   border-radius: 3px;
 }
