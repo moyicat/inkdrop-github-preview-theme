@@ -45,14 +45,14 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Source Serif Pro'), local('SourceSerifPro-Regular'), url(https://fonts.gstatic.com/s/sourceserifpro/v7/neIQzD-0qpwxpaWvjeD0X88SAOeaiXM.ttf) format('truetype');
+  src: local('Source Serif Pro'), local('SourceSerifPro-Regular'), url(https://fonts.gstatic.com/s/sourceserifpro/v8/neIQzD-0qpwxpaWvjeD0X88SAOeaiXM.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Source Serif Pro';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Source Serif Pro Bold'), local('SourceSerifPro-Bold'), url(https://fonts.gstatic.com/s/sourceserifpro/v7/neIXzD-0qpwxpaWvjeD0X88SAOeasc8bhSs.ttf) format('truetype');
+  src: local('Source Serif Pro Bold'), local('SourceSerifPro-Bold'), url(https://fonts.gstatic.com/s/sourceserifpro/v8/neIXzD-0qpwxpaWvjeD0X88SAOeasc8bhSs.ttf) format('truetype');
 }
 .serif {
   font-family: "Source Serif Pro", "Source Han Sans", "Helvetica Neue", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -83,6 +83,10 @@
   display: table;
   clear: both;
   content: "";
+}
+.mde-preview > div {
+  max-width: 50em;
+  margin: 0 auto;
 }
 .mde-preview a {
   background-color: transparent;
