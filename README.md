@@ -7,6 +7,10 @@ Markdown preview theme for [Inkdrop](https://www.inkdrop.info/).
 
  ![Light Theme](light.png)
 
+## Change Log
+
+- 2021/05/31 Change body font for Han languages to Source Han Serif to better match the English setting. If you'd like to keep using sans font, I made [another plugin](https://my.inkdrop.app/plugins/style-override) so you can easily override it. 
+
 ## Typography
 
 - Recommend to set preview font at 20pt
@@ -15,7 +19,7 @@ Markdown preview theme for [Inkdrop](https://www.inkdrop.info/).
 	- https://github.com/adobe-fonts/source-han-serif
 	- https://github.com/adobe-fonts/source-han-sans
 	- https://github.com/adobe-fonts/source-han-mono
-- I peronsally like Source Han Sans over Serif for body font, so I implemented that
+- If you'd like to use other fonts, download my [other plugin](https://my.inkdrop.app/plugins/style-override) to override them.
 
 ## Baseline Alignment
 
